@@ -1,0 +1,181 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+    color: #334155;
+    line-height: 1.7;
+    padding: 30px 16px;
+}
+
+/* JUDUL HALAMAN */
+h1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 35px 5px;
+    background: white;
+    color: #1e3a5f;
+    font-size: 34px;
+}
+
+h1 + p {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 35px 25px;
+    background: white;
+    color: #64748b;
+}
+
+/* NAVIGASI */
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 20px;
+    background: #1e3a5f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #3b82c4;
+}
+
+/* KONTEN */
+body > h2,
+body > p,
+body > div,
+body > section,
+body > main,
+body > footer {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #1e3a5f;
+    font-size: 27px;
+}
+
+body > p {
+    margin-bottom: 15px;
+}
+
+/* KARTU KONTEN */
+.content-card {
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(30, 58, 95, 0.06);
+}
+
+.content-card h2 {
+    margin-bottom: 12px;
+    color: #1e3a5f;
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.portfolio-item {
+    padding: 22px;
+    background: #f0f6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(30, 58, 95, 0.10);
+}
+
+.portfolio-item h3 {
+    color: #2563a6;
+    margin-bottom: 8px;
+}
+
+/* TOMBOL */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 22px;
+    background: #2563a6;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1e3a5f;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    margin-top: 25px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 20px 18px 5px;
+    }
+
+    h1 + p {
+        padding: 0 18px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+}
