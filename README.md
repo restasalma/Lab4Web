@@ -20,6 +20,7 @@ Pada tahap ini, ditambahkan deklarasi CSS pada bagian `<head>` untuk mengatur ta
 ## Lampiran praktikum
  
 Home/Layout sederhana :
+
 ![codehome](image/codehome.png)
 ![codehome2](image/codehome2.png)
 ![codehome3](image/codehome3.png)
@@ -30,6 +31,7 @@ Home/Layout sederhana :
 ![web-layout](image/web-layout.png)
 
 About :
+
 ![codeabaout](image/codeabout.png)
 ![css-about](image/css-about.png)
 ![css-about2](image/css-about2.png)
